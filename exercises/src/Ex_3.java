@@ -8,5 +8,23 @@
   Scrivere un main che utilizzi in sequenza i tre metodi chiedendo l'input dei dati all'utente
 */
 
+import java.util.Scanner;
+
 public class Ex_3 {
+    public static int perimetroRettangolo(int a, int b) {
+        return 2 * (a + b);
+    }
+
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.println("Inserisci la base: ");
+        int a = scanner.nextInt();
+
+        System.out.println("Inserisci l'altezza: ");
+        int b = scanner.nextInt();
+
+        System.out.println("Il perimetro del rettangolo è: " + perimetroRettangolo());
+        scanner.close();
+    }
 }
